@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="aframe.min.js"></script>
+    <script src="aframe-ar.js"></script>
+
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="V" src="V.obj"></a-asset-item>
+            <a-asset-item id="V2" src="V.mtl"></a-asset-item>
+            <a-asset-item id="Plotnost" src="Plotnost.obj"></a-asset-item>
+            <a-asset-item id="Plotnost2" src="Plotnost.mtl"></a-asset-item>
+            <a-asset-item id="Pt" src="Pt.obj"></a-asset-item>
+            <a-asset-item id="Pt2" src="Pt.mtl"></a-asset-item>
+            <a-asset-item id="Py" src="Py.obj"></a-asset-item>
+            <a-asset-item id="Py2" src="Py.mtl"></a-asset-item>
+            <a-asset-item id="P" src="P.obj"></a-asset-item>
+            <a-asset-item id="P2" src="P.mtl"></a-asset-item>
+            <a-asset-item id="p1" src="p1.obj"></a-asset-item>
+            <a-asset-item id="p3" src="p1.mtl"></a-asset-item>
+            <a-asset-item id="p4" src="p2.obj"></a-asset-item>
+            <a-asset-item id="p5" src="p2.mtl"></a-asset-item>
+            <a-asset-item id="Fa" src="Fa.obj"></a-asset-item>
+            <a-asset-item id="Fa2" src="Fa.mtl"></a-asset-item>
+        </a-assets>
+        <a-marker preset="hiro">
+            <a-obj-model src="#V" mtl="#V2" position="0 0 -2" scale="0.5 0.5 0.5"></a-obj-model>
+        </a-marker>
+        <a-marker preset="kanji">
+            <a-obj-model src="#Plotnost" mtl="#Plotnost2" position="0 0 -2"></a-obj-model>
+        </a-marker>
+        <a-marker type="pattern" url="pattern-mark.patt">
+            <a-obj-model src="#Pt" mtl="#Pt2" position="0 0 -2"></a-obj-model>
+        </a-marker>
+        <a-marker type="pattern" url="letterA.patt">
+          <a-obj-model src="#Py" mtl="#Py2" position="0 0 -2"></a-obj-model>
+        </a-marker>
+        <a-marker type="pattern" url="letterB.patt">
+          <a-obj-model src="#P" mtl="#P2" position="0 0 -2"></a-obj-model>
+        </a-marker>
+        <a-marker type="pattern" url="letterC.patt">
+          <a-obj-model src="#p1" mtl="#p3" position="0 0 -2"></a-obj-model>
+        </a-marker>
+        <a-marker type="pattern" url="letterD.patt">
+          <a-obj-model src="#p4" mtl="#p5" position="0 0 -2"></a-obj-model>
+        </a-marker>
+        <a-marker type="pattern" url="letterG.patt">
+          <a-obj-model src="#Fa" mtl="#Fa2" position="0 0 -2"></a-obj-model>
+        </a-marker>
+    </a-scene>
+    <a-camera></a-camera>
+  </body>
+</html>
